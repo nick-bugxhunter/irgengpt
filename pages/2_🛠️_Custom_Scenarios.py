@@ -79,8 +79,36 @@ incident_response_templates = {
     "Ransomware Attack": ["Exploit Public-Facing Application (T1190)", "Windows Management Instrumentation (T1047)", "Create Account (T1136)", "Process Injection (T1055)", "Data Encrypted for Impact (T1486)"],
     "Malware Infection": ["Supply Chain Compromise (T1195)", "Command and Scripting Interpreter (T1059)", "Registry Run Keys / Startup Folder (T1060)", "Obfuscated Files or Information (T1027)", "Remote Services (T1021)", "Data Destruction (T1485)"],
     "Insider Threat": ["Valid Accounts (T1078)", "Account Manipulation (T1098)", "Exploitation for Privilege Escalation (T1068)", "Data Staged (T1074)", "Scheduled Transfer (T1029)", "Account Access Removal (T1531)"],
+    "Fuzzy Kola Attack": [
+    "System Information Discovery (T1082)",
+    "Account Discovery (T1087)",
+    "Network Configuration Discovery (T1016)",
+    "Network Share Discovery (T1135)",
+    "Compromise Infrastructure (T1584)",
+    "Spearphishing Attachment (T1566.001)",
+    "User Execution (T1204.002)",
+    "PowerShell (T1059.001)",
+    "Windows Command Shell (T1059.003)",
+    "Regsvr32 (T1218.010)",
+    "Rundll32 (T1218.011)",
+    "Registry Run Keys / Startup Folder (T1547.001)",
+    "Accessibility Features (T1546.008)",
+    "Exploitation for Privilege Escalation (T1068)",
+    "Obfuscated Files or Information (T1027)",
+    "File Deletion (T1070.004)",
+    "Indirect Command Execution (T1202)",
+    "LSASS Memory (T1003.001)",
+    "File and Directory Discovery (T1083)",
+    "System Service Discovery (T1007)",
+    "SMB/Windows Admin Shares (T1021.002)",
+    "Keylogging (T1056.001)",
+    "DNS (T1071.004)",
+    "Domain Generation Algorithms (T1568.002)",
+    "Protocol Tunneling (T1572)",
+    "Exfiltration Over C2 Channel (T1041)",
+    "Inhibit System Recovery (T1490)"
+    ]
 }
-
 
 # ------------------ Helper Functions ------------------ #
 
