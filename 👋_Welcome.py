@@ -21,7 +21,7 @@ import requests
 # ------------------ Streamlit UI Configuration ------------------ #
 
 st.set_page_config(
-    page_title="AttackGen",
+    page_title="IRGenGPT",
     page_icon="👾",
 )
 
@@ -164,16 +164,16 @@ with st.sidebar:
 
 # ------------------ Main App UI ------------------ #
 
-st.markdown("# <span style='color: #1DB954;'>AttackGen 👾</span>", unsafe_allow_html=True)
+st.markdown("# <span style='color: #1DB954;'>IRGenGPT 👾</span>", unsafe_allow_html=True)
 st.markdown("<span style='color: #1DB954;'> **Use MITRE ATT&CK and Large Language Models to generate attack scenarios for incident response testing.**</span>", unsafe_allow_html=True)
 st.markdown("---")
 
 st.markdown("""          
-            ### Welcome to AttackGen!
+            ### Welcome to IRGenGPT!
             
             The MITRE ATT&CK framework is a powerful tool for understanding the tactics, techniques, and procedures (TTPs) used by threat actors; however, it can be difficult to translate this information into realistic scenarios for testing.
 
-            AttackGen solves this problem by using large language models to quickly generate attack scenarios based on a selection of a threat actor group's known techniques.
+            IRGenGPT solves this problem by using large language models to quickly generate attack scenarios based on a selection of a threat actor group's known techniques.
             """)
 
 if st.session_state.get('chosen_model_provider') == "Azure OpenAI Service":
@@ -183,7 +183,7 @@ if st.session_state.get('chosen_model_provider') == "Azure OpenAI Service":
             1. Enter the details of your Azure OpenAI Service model deployment, including the API key, endpoint, deployment name, and API version. 
             2. Select your industry and company size from the sidebar. 
             3. Go to the `Threat Group Scenarios` page to generate a scenario based on a threat actor group's known techniques, or go to the `Custom Scenarios` page to generate a scenario based on your own selection of ATT&CK techniques.
-            4. Use `AttackGen Assistant` to refine / update the generated scenario, or ask more general questions about incident response testing.
+            4. Use `IRGenGPT Assistant` to refine / update the generated scenario, or ask more general questions about incident response testing.
             """)
     
 elif st.session_state.get('chosen_model_provider') == "Google AI API":
@@ -192,7 +192,7 @@ elif st.session_state.get('chosen_model_provider') == "Google AI API":
 
             1. Enter your Google AI API key, then select your preferred model, industry, and company size from the sidebar. 
             2. Go to the `Threat Group Scenarios` page to generate a scenario based on a threat actor group's known techniques, or go to the `Custom Scenarios` page to generate a scenario based on your own selection of ATT&CK techniques.
-            3. Use `AttackGen Assistant` to refine / update the generated scenario, or ask more general questions about incident response testing.
+            3. Use `IRGenGPT Assistant` to refine / update the generated scenario, or ask more general questions about incident response testing.
             """)
     
 elif st.session_state.get('chosen_model_provider') == "Mistral API":
@@ -201,7 +201,7 @@ elif st.session_state.get('chosen_model_provider') == "Mistral API":
 
             1. Enter your Mistral API key, then select your preferred model, industry, and company size from the sidebar. 
             2. Go to the `Threat Group Scenarios` page to generate a scenario based on a threat actor group's known techniques, or go to the `Custom Scenarios` page to generate a scenario based on your own selection of ATT&CK techniques.
-            3. Use `AttackGen Assistant` to refine / update the generated scenario, or ask more general questions about incident response testing.
+            3. Use `IRGenGPT Assistant` to refine / update the generated scenario, or ask more general questions about incident response testing.
             """)
 
 elif st.session_state.get('chosen_model_provider') == "Ollama":
@@ -210,7 +210,7 @@ elif st.session_state.get('chosen_model_provider') == "Ollama":
 
             1. Select your locally hosted model from the sidebar, then enter the details of the application you would like to threat model.
             2. Go to the `Threat Group Scenarios` page to generate a scenario based on a threat actor group's known techniques, or go to the `Custom Scenarios` page to generate a scenario based on your own selection of ATT&CK techniques.
-            3. Use `AttackGen Assistant` to refine / update the generated scenario, or ask more general questions about incident response testing.
+            3. Use `IRGenGPT Assistant` to refine / update the generated scenario, or ask more general questions about incident response testing.
             """)
 
 else:
@@ -219,5 +219,5 @@ else:
 
             1. Enter your OpenAI API key, then select your preferred model, industry, and company size from the sidebar. 
             2. Go to the `Threat Group Scenarios` page to generate a scenario based on a threat actor group's known techniques, or go to the `Custom Scenarios` page to generate a scenario based on your own selection of ATT&CK techniques.
-            3. Use `AttackGen Assistant` to refine / update the generated scenario, or ask more general questions about incident response testing.
+            3. Use `IRGenGPT Assistant` to refine / update the generated scenario, or ask more general questions about incident response testing.
             """)
