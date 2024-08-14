@@ -136,7 +136,7 @@ with st.sidebar:
     # Add the drop-down selectors for Industry and Company Size
     industry = st.selectbox(
     "Select your company's industry:",
-    sorted(['Aerospace / Defense', 'Agriculture / Food Services', 
+    sorted(['Aerospace / Defence', 'Agriculture / Food Services', 
             'Automotive', 'Construction', 'Education', 
             'Energy / Utilities', 'Finance / Banking', 
             'Government / Public Sector', 'Healthcare', 
@@ -145,7 +145,8 @@ with st.sidebar:
             'Media / Entertainment', 'Non-profit', 
             'Real Estate', 'Retail / E-commerce', 
             'Technology / IT', 'Telecommunication', 
-            'Transportation / Logistics'])
+            'Transportation / Logistics',
+            'Commercial / Marketing Services'])
     , placeholder="Select Industry")
     st.session_state["industry"] = industry
 
