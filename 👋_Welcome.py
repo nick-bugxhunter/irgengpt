@@ -156,12 +156,11 @@ with st.sidebar:
 
     st.sidebar.markdown("### <span style='color: #1DB954;'>About</span>", unsafe_allow_html=True)        
     
-    st.sidebar.markdown("Created by [Matt Adams](https://www.linkedin.com/in/matthewrwadams)")
+    st.markdown("Created by [Nick Forshteyn](https://www.linkedin.com/in/forstein/).")
 
     st.sidebar.markdown(
-        "⭐ Star on GitHub: [![Star on GitHub](https://img.shields.io/github/stars/mrwadams/attackgen?style=social)](https://github.com/mrwadams/attackgen)"
+        "⭐ Star on GitHub: [![Star on GitHub](https://img.shields.io/github/stars/nick-bugxhunter/irgengpt?style=social)](https://github.com/nick-bugxhunter/irgengpt)"
     )
-
 
 # ------------------ Main App UI ------------------ #
 
