@@ -165,7 +165,7 @@ with st.sidebar:
 # ------------------ Main App UI ------------------ #
 
 st.markdown("# <span style='color: #1DB954;'>IRGenGPT 👾</span>", unsafe_allow_html=True)
-st.markdown("<span style='color: #1DB954;'> **Use MITRE ATT&CK and Large Language Models to generate attack scenarios for incident response testing.**</span>", unsafe_allow_html=True)
+st.markdown("<span style='color: #1DB954;'> **Combine the MITRE ATT&CK and Large Language Models to generate a tailored incident response scenario.**</span>", unsafe_allow_html=True)
 st.markdown("---")
 
 st.markdown("""          
