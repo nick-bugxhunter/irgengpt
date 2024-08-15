@@ -104,7 +104,6 @@ incident_response_templates = {
     "SMB/Windows Admin Shares (T1021.002)",
     "Lateral Tool Transfer (T1570)",
     "DNS (T1071.004)",
-    "Protocol Tunneling (T1572)",
     "Exfiltration Over C2 Channel (T1041)"
     ]
 }
