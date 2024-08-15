@@ -165,12 +165,12 @@ with st.sidebar:
 
 # ------------------ Main App UI ------------------ #
 
-st.markdown("# <span style='color: #1DB954;'>IRGenGPT 👾</span>", unsafe_allow_html=True)
+st.markdown("# <span style='color: #1DB954;'>IRGen GPT 👾</span>", unsafe_allow_html=True)
 st.markdown("<span style='color: #1DB954;'> **Combine the MITRE ATT&CK and Large Language Models to generate a tailored incident response scenario.**</span>", unsafe_allow_html=True)
 st.markdown("---")
 
 st.markdown("""          
-            ### Welcome to IRGenGPT!
+            ### Welcome to IRGen GPT!
             
             The MITRE ATT&CK framework is a powerful tool for understanding the tactics, techniques, and procedures (TTPs) used by threat actors; however, it can be difficult to translate this information into realistic scenarios for testing.
 
