@@ -14,9 +14,9 @@ from openai import AzureOpenAI
 
 # ------------------ Streamlit UI ------------------ #
 
-st.set_page_config(page_title="AttackGen Assistant", page_icon=":speech_balloon:")
+st.set_page_config(page_title="IRGenGPT Assistant", page_icon=":speech_balloon:")
 
-st.markdown("# <span style='color: #1DB954;'>AttackGen Assistant💬</span>", unsafe_allow_html=True)
+st.markdown("# <span style='color: #1DB954;'>IRGenGPT Assistant💬</span>", unsafe_allow_html=True)
 
 if 'last_scenario_text' in st.session_state and st.session_state['last_scenario']:
     input_scenario = st.session_state['last_scenario_text']
