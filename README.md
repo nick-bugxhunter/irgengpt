@@ -9,7 +9,7 @@ IRGenGPT is a cybersecurity incident response testing tool that leverages the po
 - [Requirements](#requirements)
 - [Installation](#installation)
 - [Data Setup](#data-setup)
-- [Running AttackGen](#running-attackgen)
+- [Running IRGenGPT](#running-IRGenGPT)
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [Licence](#licence)
@@ -25,7 +25,7 @@ If you find IRGenGPT useful, please consider starring the repository on GitHub. 
 - Displays a detailed list of techniques used by the selected threat actor group as per the MITRE ATT&CK framework.
 - Create custom scenarios based on a selection of ATT&CK techniques.
 - 🆕 Use scenario templates to quickly generate custom scenarios based on common types of cyber incidents.
-- 🆕 AttackGen Assistant - a chat interface for updating and/or asking questions about generated scenarios.
+- 🆕 IRGenGPT Assistant - a chat interface for updating and/or asking questions about generated scenarios.
 - Capture user feedback on the quality of the generated scenarios.
 - Downloadable scenarios in Markdown format.
 - Use the OpenAI API, Azure OpenAI Service, 🆕 Google AI API, Mistral API, or locally hosted Ollama models to generate incident response scenarios.
@@ -39,20 +39,20 @@ If you find IRGenGPT useful, please consider starring the repository on GitHub. 
 ### v0.5.2
 | What's new? | Why is it useful? |
 | ----------- | ---------------- |
-| GPT-4o mini Model Support | - Expanded Model Options: AttackGen now supports the use of OpenAI's GPT-4o mini model. GPT4-o mini is a highly cost-efficient small model. |
-| Updated model choices for Google AI API | - Expanded Model Options: AttackGen now supports the stable and preview versions of Gemini 1.5 Pro. | 
+| GPT-4o mini Model Support | - Expanded Model Options: IRGenGPT now supports the use of OpenAI's GPT-4o mini model. GPT4-o mini is a highly cost-efficient small model. |
+| Updated model choices for Google AI API | - Expanded Model Options: IRGenGPT now supports the stable and preview versions of Gemini 1.5 Pro. | 
 
 ### v0.5.1
 | What's new? | Why is it useful? |
 | ----------- | ---------------- |
-| GPT-4o Model Support | - Enhanced Model Options: AttackGen now supports the use of OpenAI's GPT-4o model. GPT4-o is OpenAI's leading model, able to generate scenarios twice as fast as GPT-4 for half the cost. |
+| GPT-4o Model Support | - Enhanced Model Options: IRGenGPT now supports the use of OpenAI's GPT-4o model. GPT4-o is OpenAI's leading model, able to generate scenarios twice as fast as GPT-4 for half the cost. |
 
 ### v0.5
 | What's new? | Why is it useful? |
 | ----------- | ---------------- |
 | IRGenGPT Assistant | - Iterative Scenario Refinement: The new chat interface allows users to interact with their generated incident response scenarios, making it easy to update and ask questions about the scenario without having to regenerate it from scratch. This feature enables an iterative approach to scenario development, where users can refine and improve their scenarios based on the AI assistant's responses.<br><br>- Contextual Assistance: The AI assistant responds to user queries based on the context of the generated scenario and the conversation history. This ensures that the assistant's responses are relevant and helpful in refining the scenario. |
 | Quick Start Templates for Custom Scenarios | - Quick Scenario Generation: Users can now quickly generate custom incident response scenarios based on predefined templates for common types of cyber incidents, such as phishing attacks, ransomware attacks, malware infections, and insider threats. This feature makes it easier to create realistic scenarios without having to select individual ATT&CK techniques.<br><br>- Streamlined Workflow: The template selection is integrated seamlessly into the custom scenario generation process. Users can choose a template, which automatically populates the relevant ATT&CK techniques, and then further customize the scenario if needed. |
-| Google AI API Integration  | - Expanded Model Options: AttackGen now supports the use of Google's Gemini models for generating incident response scenarios. This integration expands the range of high-quality models available to users, allowing them to leverage Google's AI capabilities for creating realistic and diverse scenarios. |
+| Google AI API Integration  | - Expanded Model Options: IRGenGPT now supports the use of Google's Gemini models for generating incident response scenarios. This integration expands the range of high-quality models available to users, allowing them to leverage Google's AI capabilities for creating realistic and diverse scenarios. |
 
 <details>
   <summary>Click to view release notes for earlier versions.</summary>
@@ -62,18 +62,18 @@ If you find IRGenGPT useful, please consider starring the repository on GitHub. 
 | What's new? | Why is it useful? |
 | ----------- | ---------------- |
 | Mistral API Integration | - Alternative Model Provider: Users can now leverage the Mistral AI models to generate incident response scenarios. This integration provides an alternative to the OpenAI and Azure OpenAI Service models, allowing users to explore and compare the performance of different language models for their specific use case. |
-| Local Model Support using Ollama | - Local Model Hosting: AttackGen now supports the use of locally hosted LLMs via an integration with Ollama. This feature is particularly useful for organisations with strict data privacy requirements or those who prefer to keep their data on-premises. Please note that this feature is not available for users of the AttackGen version hosted on Streamlit Community Cloud at https://attackgen.streamlit.app |
-| Optional LangSmith Integration | - Improved Flexibility: The integration with LangSmith is now optional. If no LangChain API key is provided, users will see an informative message indicating that the run won't be logged by LangSmith, rather than an error being thrown. This change improves the overall user experience and allows users to continue using AttackGen without the need for LangSmith. |
-| Various Bug Fixes and Improvements | - Enhanced User Experience: This release includes several bug fixes and improvements to the user interface, making AttackGen more user-friendly and robust. |
+| Local Model Support using Ollama | - Local Model Hosting: IRGenGPT now supports the use of locally hosted LLMs via an integration with Ollama. This feature is particularly useful for organisations with strict data privacy requirements or those who prefer to keep their data on-premises. Please note that this feature is not available for users of the IRGenGPT version hosted on Streamlit Community Cloud at https://IRGenGPT.streamlit.app |
+| Optional LangSmith Integration | - Improved Flexibility: The integration with LangSmith is now optional. If no LangChain API key is provided, users will see an informative message indicating that the run won't be logged by LangSmith, rather than an error being thrown. This change improves the overall user experience and allows users to continue using IRGenGPT without the need for LangSmith. |
+| Various Bug Fixes and Improvements | - Enhanced User Experience: This release includes several bug fixes and improvements to the user interface, making IRGenGPT more user-friendly and robust. |
 
 ### v0.3
 
 | What's new? | Why is it useful? |
 | ----------- | ---------------- |
-| Azure OpenAI Service Integration | - Enhanced Integration: Users can now choose to utilise OpenAI models deployed on the Azure OpenAI Service, in addition to the standard OpenAI API. This integration offers a seamless and secure solution for incorporating AttackGen into existing Azure ecosystems, leveraging established commercial and confidentiality agreements.<br><br>- Improved Data Security: Running AttackGen from Azure ensures that application descriptions and other data remain within the Azure environment, making it ideal for organizations that handle sensitive data in their threat models. |
+| Azure OpenAI Service Integration | - Enhanced Integration: Users can now choose to utilise OpenAI models deployed on the Azure OpenAI Service, in addition to the standard OpenAI API. This integration offers a seamless and secure solution for incorporating IRGenGPT into existing Azure ecosystems, leveraging established commercial and confidentiality agreements.<br><br>- Improved Data Security: Running IRGenGPT from Azure ensures that application descriptions and other data remain within the Azure environment, making it ideal for organizations that handle sensitive data in their threat models. |
 | LangSmith for Azure OpenAI Service | - Enhanced Debugging: LangSmith tracing is now available for scenarios generated using the Azure OpenAI Service. This feature provides a powerful tool for debugging, testing, and monitoring of model performance, allowing users to gain insights into the model's decision-making process and identify potential issues with the generated scenarios.<br><br>- User Feedback: LangSmith also captures user feedback on the quality of scenarios generated using the Azure OpenAI Service, providing valuable insights into model performance and user satisfaction. |
 | Model Selection for OpenAI API | - Flexible Model Options: Users can now select from several models available from the OpenAI API endpoint, such as `gpt-4-turbo-preview`. This allows for greater customization and experimentation with different language models, enabling users to find the most suitable model for their specific use case. |
-| Docker Container Image | - Easy Deployment: AttackGen is now available as a Docker container image, making it easier to deploy and run the application in a consistent and reproducible environment. This feature is particularly useful for users who want to run AttackGen in a containerised environment, or for those who want to deploy the application on a cloud platform. |
+| Docker Container Image | - Easy Deployment: IRGenGPT is now available as a Docker container image, making it easier to deploy and run the application in a consistent and reproducible environment. This feature is particularly useful for users who want to run IRGenGPT in a containerised environment, or for those who want to deploy the application on a cloud platform. |
 
 
 
@@ -106,13 +106,13 @@ Initial release.
 
 1. Clone this repository:
 ```
-git clone https://github.com/mrwadams/attackgen.git
+git clone https://github.com/mrwadams/IRGenGPT.git
 ```
 
 2. Change directory into the cloned repository:
 
 ```
-cd attackgen
+cd IRGenGPT
 ```
 
 3. Install the required Python packages:
@@ -126,7 +126,7 @@ pip install -r requirements.txt
 1. Pull the Docker container image from Docker Hub:
 
 ```
-docker pull mrwadams/attackgen
+docker pull mrwadams/IRGenGPT
 ```
 
 ## LangSmith Setup
@@ -139,19 +139,19 @@ If you do not wish to use LangSmith, you must still have a `.streamlit/secrets.t
 
 Download the latest version of the MITRE ATT&CK dataset in STIX format from [here](https://github.com/mitre-attack/attack-stix-data/blob/master/enterprise-attack/enterprise-attack.json). Ensure to place this file in the `./data/` directory within the repository.
 
-## Running AttackGen
+## Running IRGenGPT
 
-After the data setup, you can run AttackGen with the following command:
+After the data setup, you can run IRGenGPT with the following command:
 
 ```
 streamlit run 👋_Welcome.py
 ```
 
-You can also try the app on [Streamlit Community Cloud](https://attackgen.streamlit.app/).
+You can also try the app on [Streamlit Community Cloud](https://IRGenGPT.streamlit.app/).
 
 ## Usage
 
-### Running AttackGen
+### Running IRGenGPT
 
 #### Option 1: Running the Streamlit App Locally
 1. Run the Streamlit app:
@@ -164,7 +164,7 @@ streamlit run 👋_Welcome.py
 #### Option 2: Using the Docker Container Image
 1. Run the Docker container:
 ```
-docker run -p 8501:8501 mrwadams/attackgen
+docker run -p 8501:8501 mrwadams/IRGenGPT
 ```
 This command will start the container and map port 8501 (default for Streamlit apps) from the container to your host machine.
 2. Open your web browser and navigate to `http://localhost:8501`.
