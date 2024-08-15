@@ -32,7 +32,7 @@ If you find IRGenGPT useful, please consider starring the repository on GitHub. 
 - Available as a Docker container image for easy deployment.
 - Optional integration with [LangSmith](https://docs.smith.langchain.com/) for powerful debugging, testing, and monitoring of model performance.
 
-![AttackGen Screenshot](./images/screenshot.png)
+![AttackGen Screenshot](./images/screenshot1.png)
 
 ## Releases
 
