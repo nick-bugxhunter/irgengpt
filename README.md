@@ -106,7 +106,7 @@ Initial release.
 
 1. Clone this repository:
 ```
-git clone https://github.com/mrwadams/IRGenGPT.git
+git clone https://github.com/nick-bugxhunter/IRGenGPT.git
 ```
 
 2. Change directory into the cloned repository:
@@ -126,7 +126,7 @@ pip install -r requirements.txt
 1. Pull the Docker container image from Docker Hub:
 
 ```
-docker pull mrwadams/IRGenGPT
+docker pull nick-bugxhunter/IRGenGPT
 ```
 
 ## LangSmith Setup
