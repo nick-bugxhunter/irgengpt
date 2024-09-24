@@ -95,7 +95,7 @@ def load_attack_data():
     # Load the ICS attack data
     ics_attack_data = MitreAttackData("./data/ics-attack.json")
     # Combine both Enterprise and ICS techniques into a single object
-    attack_data = enterprise_attack_data + ics_attack_data
+    attack_data = enterprise_attack_data.get_techniques() + ics_attack_data.get_techniques()
     return attack_data
 
 attack_data = load_attack_data()
@@ -104,9 +104,11 @@ attack_data = load_attack_data()
 @st.cache_resource
 def load_techniques():
     try:
-        techniques = attack_data.get_techniques()
+        # Load combined attack data
+        attack_data = load_attack_data()
+        # Process all techniques into a unified list
         techniques_list = []
-        for technique in techniques:
+        for technique in attack_data:
             for reference in technique.external_references:
                 if "external_id" in reference:
                     techniques_list.append({
