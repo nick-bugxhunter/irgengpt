@@ -113,7 +113,12 @@ incident_response_templates = {
 # Load and cache the MITRE ATT&CK data
 @st.cache_resource
 def load_attack_data():
-    attack_data = MitreAttackData("./data/enterprise-attack.json")
+    # Load the enterprise attack data
+    enterprise_attack_data = MitreAttackData("./data/enterprise-attack.json")
+    # Load the ICS attack data
+    ics_attack_data = MitreAttackData("./data/ics-attack.json")
+    # Combine both Enterprise and ICS techniques into a single object
+    attack_data = enterprise_attack_data + ics_attack_data
     return attack_data
 
 attack_data = load_attack_data()
