@@ -79,33 +79,10 @@ incident_response_templates = {
     "Ransomware Attack": ["Exploit Public-Facing Application (T1190)", "Windows Management Instrumentation (T1047)", "Create Account (T1136)", "Process Injection (T1055)", "Data Encrypted for Impact (T1486)"],
     "Malware Infection": ["Supply Chain Compromise (T1195)", "Command and Scripting Interpreter (T1059)", "Registry Run Keys / Startup Folder (T1060)", "Obfuscated Files or Information (T1027)", "Remote Services (T1021)", "Data Destruction (T1485)"],
     "Insider Threat": ["Valid Accounts (T1078)", "Account Manipulation (T1098)", "Exploitation for Privilege Escalation (T1068)", "Data Staged (T1074)", "Scheduled Transfer (T1029)", "Account Access Removal (T1531)"],
-    "Fuzzy Koala Attack": [
-    "Spearphishing Attachment (T1566.001)",
-    "User Execution (T1204.002)",
-    "PowerShell (T1059.001)",
-    "Regsvr32 (T1218.010)",
-    "Rundll32 (T1218.011)",
-    "MSHTA (T1218.005)",
-    "Obfuscated Files or Information (T1027)",
-    "Registry Run Keys / Startup Folder (T1547.001)",
-    "Modify Registry (T1562.001)",
-    "Accessibility Features (T1546.008)",
-    "System Information Discovery (T1082)",
-    "System Service Discovery (T1007)",
-    "Account Discovery (T1087)",
-    "Network Configuration Discovery (T1016)",
-    "Network Share Discovery (T1135)",
-    "Indicator Removal from Tools (T1027.005)",
-    "LSASS Memory (T1003.001)",
-    "Compromise Infrastructure (T1584)",
-    "Windows Command Shell (T1059.003)",
-    "Exploitation for Privilege Escalation (T1068)",
-    "File and Directory Discovery (T1083)",
-    "SMB/Windows Admin Shares (T1021.002)",
-    "Lateral Tool Transfer (T1570)",
-    "DNS (T1071.004)",
-    "Exfiltration Over C2 Channel (T1041)"
-    ]
+    "Supply Chain Compromise": ["Supply Chain Compromise (T0862)", "Command-Line Interface (T0807)", "Modify Program (T0889)", "Exploitation for Privilege Escalation (T0890)", "Lateral Tool Transfer (T0867)", "Automated Collection (T0802)", "Connection Proxy (T0884)", "Block Command Message (T0803)", "Denial of Control (T0813)", "Damage to Property (T0879)"],
+    "Spearphishing Attack on ICS Systems": ["Spearphishing Attachment (T0865)", "User Execution (T0863)", "System Firmware (T0857)", "Hooking (T0874)", "Remote Services (T0886)", "Data from Information Repositories (T0811)", "Standard Application Layer Protocol (T0869)", "Modify Alarm Settings (T0838)", "Loss of Control (T0813)"],
+    "Malware Infection through Removable Media": ["Replication Through Removable Media (T0847)", "Scripting (T0853)", "Project File Infection (T0873)", "Exploitation for Privilege Escalation (T0890)", "Lateral Tool Transfer (T0867)", "Monitor Process State (T0801)", "Standard Application Layer Protocol (T0869)", "Data Destruction (T0809)", "Loss of Productivity and Revenue (T0828)"],
+    "Ransomware Attack on ICS Systems": ["Exploit Public-Facing Application (T0819)", "Command-Line Interface (T0807)", "Modify Program (T0889)", "Exploitation for Privilege Escalation (T0890)", "Remote Services (T0886)", "Data from Local System (T0893)", "Standard Application Layer Protocol (T0869)", "Data Destruction (T0809)", "Denial of Control (T0813)", "Denial of View (T0815)"]
 }
 
 # ------------------ Helper Functions ------------------ #
