@@ -36,6 +36,11 @@ If you find IRGenGPT useful, please consider starring the repository on GitHub. 
 
 ## Releases
 
+### v0.5.3
+| What's new? | Why is it useful? |
+| ----------- | ----------------- |
+| MITRE ATT&CK ICS Techniques Support | - The app now includes support for MITRE ATT&CK techniques specific to Industrial Control Systems (ICS), expanding its Incident Response Testing Scenarios to also include critical infrastructure environments. |
+
 ### v0.5.2
 | What's new? | Why is it useful? |
 | ----------- | ---------------- |
