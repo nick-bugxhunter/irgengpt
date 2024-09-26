@@ -166,7 +166,7 @@ with st.sidebar:
 # ------------------ Main App UI ------------------ #
 
 st.markdown("# <span style='color: #1DB954;'>IRGen GPT 👾</span>", unsafe_allow_html=True)
-st.markdown("<span style='color: #1DB954;'> **Combine the MITRE ATT&CK and Large Language Models to generate a tailored incident response scenario.**</span>", unsafe_allow_html=True)
+st.markdown("<span style='color: #1DB954;'> **Combine the MITRE ATT&CK and Large Language Models to generate a tailored incident response scenario for Enterprise, Mobile and Industrial Control Systems (ICS). **</span>", unsafe_allow_html=True)
 st.markdown("---")
 
 st.markdown("""          
@@ -175,6 +175,8 @@ st.markdown("""
             The MITRE ATT&CK framework is a powerful tool for understanding the tactics, techniques, and procedures (TTPs) used by threat actors; however, it can be difficult to translate this information into realistic scenarios for testing.
 
             IRGenGPT solves this problem by using large language models to quickly generate attack scenarios based on a selection of a threat actor group's known techniques.
+
+            We’ve expanded the platform’s capabilities to also support industrial environments like energy, utilities, and manufacturing by incorporating Industrial Control System (ICS) techniques from MITRE ATT&CK. This means that organisations involved in critical infrastructure can now generate incident response scenarios that are more relevant to their specific needs and vulnerabilities.
             """)
 
 if st.session_state.get('chosen_model_provider') == "Azure OpenAI Service":
