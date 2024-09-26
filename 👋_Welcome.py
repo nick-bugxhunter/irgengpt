@@ -21,7 +21,7 @@ import requests
 # ------------------ Streamlit UI Configuration ------------------ #
 
 st.set_page_config(
-    page_title="IRGenGPT",
+    page_title="ResponseGPT",
     page_icon="👾",
 )
 
