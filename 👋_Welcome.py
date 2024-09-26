@@ -21,7 +21,7 @@ import requests
 # ------------------ Streamlit UI Configuration ------------------ #
 
 st.set_page_config(
-    page_title="Response Gen GPT",
+    page_title="Response GPT",
     page_icon="👾",
 )
 
@@ -170,11 +170,11 @@ st.markdown("<span style='color: #1DB954;'> **Combine the MITRE ATT&CK and Large
 st.markdown("---")
 
 st.markdown("""          
-            ### Welcome to Response Gen GPT!
+            ### Welcome to Response GPT!
             
             The MITRE ATT&CK framework is a powerful tool for understanding the tactics, techniques, and procedures (TTPs) used by threat actors; however, it can be difficult to translate this information into realistic scenarios for testing.
 
-            IRGenGPT solves this problem by using large language models to quickly generate attack scenarios based on a selection of a threat actor group's known techniques.
+            Response GPT solves this problem by using large language models to quickly generate attack scenarios based on a selection of a threat actor group's known techniques.
 
             We’ve expanded the platform’s capabilities to also support industrial environments like energy, utilities, and manufacturing by incorporating Industrial Control System (ICS) techniques from MITRE ATT&CK. This means that organisations involved in critical infrastructure can now generate incident response scenarios that are more relevant to their specific needs and vulnerabilities.
             """)
